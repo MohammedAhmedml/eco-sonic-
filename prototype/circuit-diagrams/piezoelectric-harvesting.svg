@@ -1,0 +1,6 @@
+<!-- Placeholder: replace with finalized piezoelectric circuit diagram. -->
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450" y="80" text-anchor="middle" font-family="Arial" font-size="30">Piezoelectric Energy Harvesting</text>
+<text x="450" y="250" text-anchor="middle" font-family="Arial" font-size="22">Vibration → Piezo → Rectification → Storage → Measurement Load</text>
+</svg>
