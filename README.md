@@ -2,6 +2,15 @@
 
 > An integrated engineering prototype concept for investigating water recovery, resource-efficient cooling support, and low-grade waste-energy harvesting in data-center environments.
 
+## 🚀 Live Prototype
+
+**Explore the Eco-Sonic Digital Twin & System Control Interface:**
+
+👉 [Open Eco-Sonic Prototype](https://eco-sonic-prototype.vercel.app/)
+
+The interactive prototype demonstrates the system-control concept, including
+water intake, thermal load, acoustic energy harvesting, hydraulic energy
+harvesting, filtration load, and system-level resource offset calculations.
 [![Status](https://img.shields.io/badge/Status-Planning-orange)]()
 [![Controller](https://img.shields.io/badge/Controller-ESP32-blue)]()
 [![Project](https://img.shields.io/badge/Focus-Water%20%7C%20Energy%20%7C%20IoT-green)]()
