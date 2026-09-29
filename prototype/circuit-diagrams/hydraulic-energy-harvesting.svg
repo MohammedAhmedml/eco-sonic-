@@ -1,6 +1,19 @@
-<!-- Placeholder: replace with finalized hydraulic harvesting diagram. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500">
-<rect width="100%" height="100%" fill="white"/>
-<text x="450" y="80" text-anchor="middle" font-family="Arial" font-size="30">Hydraulic Energy Harvesting</text>
-<text x="450" y="250" text-anchor="middle" font-family="Arial" font-size="22">Pump → Nozzle → Water Wheel → Generator → Rectifier → Load</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#334155"/></marker>
+<style>
+.title{font:700 34px Arial;fill:#0f172a}.sub{font:17px Arial;fill:#475569}.h{font:700 19px Arial;fill:#0f172a}.t{font:15px Arial;fill:#334155}.s{font:13px Arial;fill:#475569}
+.b{fill:#fff;stroke:#64748b;stroke-width:2}.p{stroke:#dc2626;stroke-width:4;fill:none}.g{stroke:#111827;stroke-width:3;fill:none}.sig{stroke:#2563eb;stroke-width:3;fill:none}.ctl{stroke:#ea580c;stroke-width:3;fill:none}.flow{stroke:#0f766e;stroke-width:4;fill:none}.note{fill:#fffbeb;stroke:#d97706;stroke-width:1.5}
+</style></defs>
+<rect width="1600" height="900" fill="white"/>
+<rect x="30" y="25" width="1540" height="105" rx="12" fill="#eef2ff" stroke="#475569" stroke-width="2"/>
+<text x="60" y="68" class="title">Eco-Sonic — Hydraulic Energy Harvesting</text><text x="60" y="100" class="sub">Water flow drives a small generator; output is rectified, conditioned and measured</text><rect x="70" y="205" width="250" height="140" rx="12" class="b"/><text x="195" y="242" text-anchor="middle" class="h">Reservoir</text><text x="195" y="275" text-anchor="middle" class="t">Recovered / test water</text><text x="195" y="305" text-anchor="middle" class="s">Tank + level sensing</text>
+<rect x="400" y="205" width="250" height="140" rx="12" class="b"/><text x="525" y="242" text-anchor="middle" class="h">DC Pump</text><text x="525" y="275" text-anchor="middle" class="t">5 V / 12 V</text><text x="525" y="305" text-anchor="middle" class="s">MOSFET controlled</text>
+<rect x="730" y="205" width="250" height="140" rx="12" class="b"/><text x="855" y="242" text-anchor="middle" class="h">Nozzle / Valve</text><text x="855" y="275" text-anchor="middle" class="t">Flow control</text><text x="855" y="305" text-anchor="middle" class="s">Sets hydraulic input</text>
+<rect x="1060" y="205" width="250" height="140" rx="12" class="b"/><text x="1185" y="242" text-anchor="middle" class="h">Water Wheel</text><text x="1185" y="275" text-anchor="middle" class="t">Mechanical rotation</text><text x="1185" y="305" text-anchor="middle" class="s">Coupled to generator</text>
+<path d="M320 275H400" class="flow" marker-end="url(#a)"/><path d="M650 275H730" class="flow" marker-end="url(#a)"/><path d="M980 275H1060" class="flow" marker-end="url(#a)"/>
+<rect x="1060" y="430" width="250" height="140" rx="12" class="b"/><text x="1185" y="467" text-anchor="middle" class="h">DC Generator</text><text x="1185" y="500" text-anchor="middle" class="t">Mechanical → electrical</text><text x="1185" y="530" text-anchor="middle" class="s">Measure V and I</text><path d="M1185 345V430" class="flow" marker-end="url(#a)"/>
+<rect x="730" y="430" width="250" height="140" rx="12" class="b"/><text x="855" y="467" text-anchor="middle" class="h">Rectifier</text><text x="855" y="500" text-anchor="middle" class="t">Bridge + Schottky</text><text x="855" y="530" text-anchor="middle" class="s">DC conditioning</text><path d="M1060 500H980" class="p" marker-end="url(#a)"/>
+<rect x="400" y="430" width="250" height="140" rx="12" class="b"/><text x="525" y="467" text-anchor="middle" class="h">Storage / DC-DC</text><text x="525" y="500" text-anchor="middle" class="t">Capacitor / supercap</text><text x="525" y="530" text-anchor="middle" class="s">Regulate before load</text><path d="M730 500H650" class="p" marker-end="url(#a)"/>
+<rect x="70" y="430" width="250" height="140" rx="12" class="b"/><text x="195" y="467" text-anchor="middle" class="h">Measurement Load</text><text x="195" y="500" text-anchor="middle" class="t">Voltage + current</text><text x="195" y="530" text-anchor="middle" class="s">P = V × I</text><path d="M400 500H320" class="p" marker-end="url(#a)"/>
+<path d="M1185 570V650H195V570" class="flow" marker-end="url(#a)"/><text x="690" y="645" text-anchor="middle" class="s">Return flow</text>
+<rect x="70" y="720" width="1240" height="100" rx="12" class="note"/><text x="95" y="755" class="h">Judge-facing measurement set</text><text x="95" y="785" class="s">Flow rate • generator voltage • load current • pump input voltage/current • test duration • harvested energy</text></svg>
