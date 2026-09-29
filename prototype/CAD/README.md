@@ -1,12 +1,36 @@
-# CAD Files
+# Eco-Sonic CAD Model
 
-Place CAD drawings, dimensioned layouts, enclosure models, and fabrication drawings here.
+## Prototype CAD Visualization
 
-Recommended future files:
+The following CAD visualization represents the proposed physical architecture of the Eco-Sonic prototype.
 
-- baseboard layout
-- water-wheel housing
-- tank brackets
-- ESP32 enclosure
-- vibration harvesting mount
-- server demonstration enclosure
+![Eco-Sonic CAD Prototype](eco-sonic-cad-render.png)
+
+## Major Components Represented
+
+The CAD visualization includes:
+
+- Data-center thermal simulation enclosure
+- Heat sink and cooling fan assembly
+- Water circulation tubing
+- Hydraulic pump
+- Water-wheel energy harvesting section
+- Generator assembly
+- Piezoelectric energy harvesting section
+- Multi-stage water filtration
+- UV-C water treatment chamber
+- ESP32-based monitoring and control enclosure
+- Water storage and circulation components
+
+## Purpose
+
+The CAD model was developed to visualize the physical arrangement and integration of the major Eco-Sonic subsystems before prototype assembly.
+
+It is used for:
+
+- Prototype layout planning
+- Component placement
+- Hydraulic routing
+- Electrical enclosure placement
+- Demonstration and presentation
+- Assembly planning
