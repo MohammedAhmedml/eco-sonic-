@@ -1,6 +1,15 @@
-<!-- Placeholder: replace with finalized piezoelectric circuit diagram. -->
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500">
-<rect width="100%" height="100%" fill="white"/>
-<text x="450" y="80" text-anchor="middle" font-family="Arial" font-size="30">Piezoelectric Energy Harvesting</text>
-<text x="450" y="250" text-anchor="middle" font-family="Arial" font-size="22">Vibration → Piezo → Rectification → Storage → Measurement Load</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#334155"/></marker>
+<style>
+.title{font:700 34px Arial;fill:#0f172a}.sub{font:17px Arial;fill:#475569}.h{font:700 19px Arial;fill:#0f172a}.t{font:15px Arial;fill:#334155}.s{font:13px Arial;fill:#475569}
+.b{fill:#fff;stroke:#64748b;stroke-width:2}.p{stroke:#dc2626;stroke-width:4;fill:none}.g{stroke:#111827;stroke-width:3;fill:none}.sig{stroke:#2563eb;stroke-width:3;fill:none}.ctl{stroke:#ea580c;stroke-width:3;fill:none}.flow{stroke:#0f766e;stroke-width:4;fill:none}.note{fill:#fffbeb;stroke:#d97706;stroke-width:1.5}
+</style></defs>
+<rect width="1600" height="900" fill="white"/>
+<rect x="30" y="25" width="1540" height="105" rx="12" fill="#eef2ff" stroke="#475569" stroke-width="2"/>
+<text x="60" y="68" class="title">Eco-Sonic — Piezoelectric Energy Harvesting</text><text x="60" y="100" class="sub">Controlled vibration excites piezoelectric elements; output is rectified, stored and measured</text><rect x="70" y="205" width="270" height="145" rx="12" class="b"/><text x="205" y="242" text-anchor="middle" class="h">Controlled Vibration</text><text x="205" y="275" text-anchor="middle" class="t">Vibration motor / speaker</text><text x="205" y="305" text-anchor="middle" class="s">Defined test excitation</text>
+<rect x="430" y="185" width="330" height="185" rx="12" class="b"/><text x="595" y="225" text-anchor="middle" class="h">Piezoelectric Array</text><text x="595" y="260" text-anchor="middle" class="t">Discs / strips + plate</text><text x="595" y="295" text-anchor="middle" class="s">Mechanical strain → electrical output</text><text x="595" y="325" text-anchor="middle" class="s">Series/parallel as tested</text><path d="M340 278H430" class="flow" marker-end="url(#a)"/>
+<rect x="850" y="205" width="300" height="145" rx="12" class="b"/><text x="1000" y="242" text-anchor="middle" class="h">Rectification</text><text x="1000" y="275" text-anchor="middle" class="t">Bridge + Schottky</text><text x="1000" y="305" text-anchor="middle" class="s">Smooth DC</text><path d="M760 278H850" class="p" marker-end="url(#a)"/>
+<rect x="430" y="500" width="330" height="145" rx="12" class="b"/><text x="595" y="538" text-anchor="middle" class="h">Storage / Conditioning</text><text x="595" y="570" text-anchor="middle" class="t">Capacitor / supercapacitor</text><text x="595" y="600" text-anchor="middle" class="s">Optional DC-DC stage</text>
+<rect x="850" y="500" width="300" height="145" rx="12" class="b"/><text x="1000" y="538" text-anchor="middle" class="h">Measurement Load</text><text x="1000" y="570" text-anchor="middle" class="t">Voltage + current</text><text x="1000" y="600" text-anchor="middle" class="s">P = V × I</text><path d="M1000 350V500" class="p" marker-end="url(#a)"/><path d="M760 572H850" class="p" marker-end="url(#a)"/>
+<rect x="70" y="500" width="270" height="145" rx="12" class="b"/><text x="205" y="538" text-anchor="middle" class="h">Mounting</text><text x="205" y="570" text-anchor="middle" class="t">Rubber isolators</text><text x="205" y="600" text-anchor="middle" class="s">Spring plate optional</text>
+<rect x="70" y="715" width="1080" height="105" rx="12" class="note"/><text x="95" y="750" class="h">Testing guidance</text><text x="95" y="780" class="s">Record excitation source/frequency, open-circuit voltage, loaded voltage, load current and duration.</text></svg>
